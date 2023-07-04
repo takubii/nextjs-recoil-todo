@@ -1,4 +1,5 @@
 import { AddTodo } from '@/components/AddTodo';
+import { Header } from '@/components/Header';
 import { TodoList } from '@/components/TodoList';
 
 export const metadata = {
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <main>
       <div className='container mx-auto max-w-md'>
+        <Header />
         <AddTodo />
         <TodoList />
       </div>
